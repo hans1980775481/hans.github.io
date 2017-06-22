@@ -1,0 +1,60 @@
+body{
+    background: url(../图片/nihao1.jpg);
+  }
+  table{
+    margin: auto;
+    margin-top: 18px;
+    border-spacing: 2px;
+    width: 340px;
+    height: 310px;
+    
+  }
+  td{
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    background: #969;
+  }
+  #first {
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 380px;
+    height: 380px;
+    box-shadow: 2px 2px 10px black;
+    background: #1DDAA1;
+    border-radius: 10px;
+  }
+  caption{
+    width: 350px;
+    background: #0FF3E8;
+    font-family: 华文行楷, 华文隶书;
+    font-size: 36px;
+  }
+  th{
+    font-family:华文彩云;
+    font-size: 20px;
+  }
+  #second {
+    background: #D75991;
+  }
+  #four{
+    text-align: center;
+    color: #F62888;
+    font-family: 华文新魏,华文彩云;
+    font-size: 36px;
+  }
+  button{
+    margin-left:47%;
+    margin-top: 50px;
+  }
+  .last{
+    background: #469;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    width: 56.1%;
+    margin:auto;
+    margin-right: 22.7%;
+  }

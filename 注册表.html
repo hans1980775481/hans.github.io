@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>注册表</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <style type="text/css">
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="scc文件/注册表.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function($) {
+    $("#three").click(function(event) {
+        var s1=$("#input1").val();
+        var s2=$("#input2").val();
+        var s3=$("#input3").val();
+         // $(".span").show();
+        if(s1.length!=0&&s2.length!=0&&s3.length!=0) {
+          if(s2!=s3) {
+            alert("您的重复密码和密码不相同,请重新输入");
+          }else {
+            $(function () {
+                  window.location.href = "注册成功.html";
+              })
+            // var s4=$("#phone").val();
+            // var k=0;
+            // for(var i=0;i<s4.length;i++) {
+            //   if(s4[i]<'0'||a4[i]>'9') {
+            //     k=1;
+            //     break;
+            //   }
+            // }
+            // if(k==1) {
+            //   alert("手机号只能位数,请重新输入");
+            // }
+            // else {
+            //   $(function () {
+            //       window.location.href = "index.html";
+            //   })
+            // }
+          }
+        } 
+        else {
+          alert("请正确输入您的账号和密码（密码和账号都不为空即可,且重复密码和密码相同）")
+        }
+
+      });
+
+
+  });
+    
+  </script>
+  <script type="text/javascript">
+    var city=new Array();
+    city[0]=["请选择"]
+    city[1]=["南昌", "新余","萍乡","宜春","井冈山","九江"]
+    city[2]=["武汉","黄石","襄樊","十堰","荆州","宜昌","荆门","鄂州","孝感","黄冈","咸宁","随州","恩施","仙桃","潜江","天门"]
+    city[3]=["长沙","株洲","湘潭","衡阳","邵阳","岳阳","常德","张家界","益阳","郴州"]
+    city[4]=["广州","深圳","东莞","中山"]
+    function OnprovinceChange(x){
+      // var select = document.form1.city;//取得form1(id)中的city（name）元素 不知道为什么不行
+      var select = document.getElementById("city");
+      var len=select.options.length;
+      for(var i=0;i<len;i++) select.remove(0);//每次都移除第0个
+      for(var i=0;i<city[x].length;i++) {
+        var newOption=new Option(city[x][i]);
+        select.add(newOption);
+      }
+    }
+    
+    // function checkphone(){
+    //   var tip= document.getElementById("phonetip");
+    //   var reg=/^1[358]\d{9}$/;
+    //   if(!reg.test(document.form1.phone.value)){
+    //     tip.innerHTML="请输入正确的手机号码！";
+    //     document.form1.phone.focus();
+    //   } else {
+    //     tip.innerHTML="";
+    //   }
+    // }
+  </script>
+</head>
+<body>
+<div class="big">
+<h1>用户注册</h1>
+<form id="form1" method="get" action="">
+<div class="first">
+  <label for="user" class="second important">用户名：</label>
+  <input type="text" name="user" id="input1"></input>
+</div>
+<div class="first">
+  <label for="password1" class="second important">密码：</label>
+  <input type="password" name="password1" id="input2"></input>
+</div>
+<div class="first">
+  <label for="password2" class="second important">重复密码：</label>
+  <input type="password" name="password2" id="input3"/></input>
+  <span>  密码由数字、字母、下划线组成，最多16个字符</span>
+</div>
+<div class="first">
+  <label for="radio" class="second important">性别：</label>
+  <input type="radio" name="radio" value="female">女
+  <input type="radio" name="radio" value="male">男
+</div>
+<div class="first" >
+  <label for="date" class="second important">出生日期：</label>
+  <input type="date" name="date" />
+</div>
+<div class="first">
+<label for="like" class="second">爱好：</label>
+<input type="checkbox" name="like"  value="read">读书
+<input type="checkbox" name="like"  value="movie">电影
+<input type="checkbox" name="like"  value="sport">运动
+<input type="checkbox" name="like"  value="music">音乐
+</div>
+<div class="first">
+<label for="select" class="second important">家庭地址：</label>
+<label for="select">省份：</label>
+<select name="select" style="width: 100px" onChange="OnprovinceChange(this.selectedIndex)">
+<option value="请选择">请选择</option>
+<option value="江西">江西</option>
+<option value="北京">湖北</option>
+<option value="上海">湖南</option>
+<option value="广东">广东</option>
+</select>
+<label >城市：</label>
+<select id="city" style="width: 100px" >
+<option >请选择</option>
+</select>
+</div>
+<div class="first">
+<label class="second important" for="phone" >手机号码：</label>
+<input type="tel" id="phone" placeholder="xxx-xxxx-xxxx" maxlength="11" ></input>
+<span >手机号码最多为11位数字</span>
+</div>
+<div class="first">
+  <label class="second important" for="email" >电子邮件:</label>
+  <input name="email" type="email" maxlength="20" />
+</div>
+<div class="first">
+  <label class="second" for="area">用户留言:</label>
+  <textarea name="area" rows="6" cols="70"></textarea>
+</div>
+<div class="first1">
+  <!-- <a href="转跳.html"><input type="submit" value="注册" class="zhuce" ></a> -->
+  <button type="submit"  id="three">注册</button>
+  <!-- <a href="" ><div id="three">注册</div></a> -->
+  <!-- <input type="reset" value="重置"> -->
+  <button type="reset">重置</button>
+</div>
+</form>
+</div>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html>

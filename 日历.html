@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>日历</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <style type="text/css">
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="scc文件/日历.css">
+  <script type="text/javascript">
+    function ten(){
+      for(var i=0;i<=10;i++) {
+        document.write(i+" ")
+      }
+    }
+
+    function time(){
+    var dates=new Date();
+    var hours=dates.getHours();
+    var second=dates.getSeconds();
+    var min=dates.getMinutes();
+    hours=check(hours);
+    second=check(second);
+    min=check(min);
+    var dates=new Date();
+  var week=dates.getDay();
+  var day=dates.getDate();
+  var month=dates.getMonth()+1;
+  var year=dates.getFullYear();
+  var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]
+  str="欢迎您登录网站！！！<br>现在的时间是"+year+"年"+month+"月"+day+"日"+weekday[week]+hours+":"+min+":"+second;
+  //  document.write(hours+":"+min+":"+second);
+  //  var str=hours+":"+min+":"+second
+    document.getElementById('three').innerHTML=str;
+    t=setTimeout(time,900);//t=setTimeout('time()',900); 两种都可以
+  }
+  function check(i) {
+    if(i<10) {
+      i="0"+i;
+    }
+    return i;
+  }
+  window.onload=time;
+  </script>
+</head>
+<body>
+<div id="four"><span id="three"></span> </div>
+<script type="text/javascript"> 
+var today=new Date();
+var year=today.getFullYear();
+var month=today.getMonth()+1;
+var todays=today.getDate();
+document.write("<div id='first'> ");
+document.write("<table><caption>"+year+"年"+month+"月" +"</caption> ");
+document.write("<tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr> ");
+document.write("<tr>");
+var firstday=new Date(year,month-1,1).getDay() ;
+var lateday=new Date(year,month,0) ;
+var days=lateday.getDate();
+for(var i=1;i<=firstday;i++) {
+  document.write("<td></td>");
+}
+for(var i=1;i<=days;i++) {
+  if(i==todays) document.write("<td id='second' >"+i+"</td>");
+  else document.write("<td>"+i+"</td>");
+  if((i+firstday)%7==0) {
+    document.write("</tr><tr>");
+  }
+}
+for(var i=1;i<=6-lateday.getDay();i++) 
+  document.write("<td></td>");
+document.write("</tr></table></div>");
+
+</script>  
+<a href="index.html"><button type="button" >返回主页</button></a>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html>

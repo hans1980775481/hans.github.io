@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>计算器</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  var flag=1;
+  var op=0;
+  var a=0,b=0,c=0;
+    function Digit(num){
+      if(flag==1)
+        document.form1.txtValue.value =num;
+      else 
+        document.form1.txtValue.value +=num;
+      flag=0;
+    }
+    function Operater(n){
+      op=n;
+      a=Number(document.form1.txtValue.value)
+      flag=1
+    }
+    function Calculate(){
+      b=Number(document.form1.txtValue.value)
+      switch(op){
+        case '+':c =a+b; break;
+        case '-':c =a-b; break;
+        case '*':c =a*b; break;
+        case '/':c =a/b; break;
+      }
+      document.form1.txtValue.value=c;
+      flag=1
+    }
+  </script>
+  <style type="text/css">
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="scc文件/计算器.css">
+</head>
+<body>
+<p id="notice">温馨提示：该计算器不能够连续进行'+'、'-'、'*'、'/'哦！！！</p>
+<form name="form1">
+  <input type="text" id="txtValue" size="35" name="reselt" value=""/> 
+  <br><br>
+  <input type="button" class="but"  value="7" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="8" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="9" onClick="Digit(value)"/>
+  <input type="button" class="but"  value="/" onClick="Operater(value)"/>
+  <br><br>
+  <input type="button" class="but"  value="4" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="5" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="6" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="*" onClick="Operater(value)"/>
+  <br><br>
+  <input type="button" class="but"  value="1" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="2" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="3" onClick="Digit(value)"/>   
+  <input type="button" class="but"  value="-" onClick="Operater(value)"/>
+  <br><br>
+  <input type="button" class="but"  value="0" onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="." onClick="Digit(value)"/> 
+  <input type="button" class="but"  value="=" onClick="Calculate()"/>   
+  <input type="button" class="but"  value="+" onClick="Operater(value)"/>
+</form>
+<a href="index.html"><button type="button" >返回主页</button></a>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html>

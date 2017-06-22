@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的订单</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <base target="_blank">
+  <style type="text/css">
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="scc文件/我的订单.css">
+  <script type="text/javascript " src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $("#right_tow_div_second_ul").hide();
+      $("#right_tow_div_first_ul").mouseover(function(event) {
+        $("#right_tow_div_second_ul").show();
+        $(this).addClass('uladd');
+      }).mouseout(function(event) {
+        $("#right_tow_div_second_ul").hide();
+        $(this).removeClass('uladd');
+      });
+      $("#right_tow_div_four_ul").hide();
+      $("#right_tow_div_three_ul").mouseover(function(event) {
+        $("#right_tow_div_four_ul").show();
+        $(this).addClass('uladd');
+      }).mouseout(function(event) {
+        $(this).removeClass('uladd');
+        $("#right_tow_div_four_ul").hide();
+      });
+      $(".down").mouseover(function(event) {
+        $(this).addClass('downadd');
+      }).mouseout(function(event) {
+        $(this).removeClass('downadd');
+      });
+    });
+  </script>
+</head>
+<body>
+<header id="headerone">
+<a href="index.html"><img class="img1" src="图片/logo.jpg"></a>
+<div class="logo">
+  <a href="index.html" class="fore1">我的狂购</a>
+  <a href="index.html" class="fore2">返回狂购首页</a>
+</div>
+<a href="index.html" >首页</a>&nbsp;&nbsp;
+<a href="javascript:void(0)" >账户设置</a>&nbsp;&nbsp;
+<a href="javascript:void(0)" >社区</a>&nbsp;&nbsp;
+<a href="javascript:void(0)" >消息</a>
+<div id="one1">
+  <input type="text" class="input1">
+  <a href="javascript:void(0)"><div class="topseek">搜索</div></a>
+  <!-- <a href=""><span class="span1">1元封顶&nbsp;</span></a> -->
+  <a href="javascript:void(0)"><span class="span1">欢乐颂2&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">择天记&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">腾讯传&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">大秦帝国&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">创业&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">追问&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">漂洋过海</span></a>
+</div>
+<!-- <div id="divone">
+<span class="shop" >我的购物车</span>
+</div> -->
+
+<!-- <div id="divone1">
+<input type="text" maxlength="10px" style="color: rgb(153, 153, 153);" /><input type="button" value="搜索"/>
+</div> -->
+</header>
+<article id="articleone">
+  <aside id="left">
+    <ul>
+      <li>订单中心</li>
+      <ul>
+        <li><a href="javascript:void(0)">我的订单</a></li>
+        <li><a href="javascript:void(0)">本地生活订单</a></li>
+        <li><a href="javascript:void(0)">我的活动</a></li>
+        <li><a href="javascript:void(0)">评价晒单</a></li>
+        <li><a href="javascript:void(0)">取消订单记录</a></li>
+        <li><a href="javascript:void(0)">我的常购商品</a></li>
+      </ul>
+      <li>关注中心</li>
+      <ul>
+        <li><a href="javascript:void(0)">关注的商品</a></li>
+        <li><a href="javascript:void(0)">关注的店铺</a></li>
+        <li><a href="javascript:void(0)">关注的专辑</a></li>
+        <li><a href="javascript:void(0)">关注的品牌</a></li>
+        <li><a href="javascript:void(0)">关注的活动</a></li>
+        <li><a href="javascript:void(0)">浏览历史</a></li>
+      </ul>
+      <li>返修退换货</li>
+      <ul>
+        <li><a href="javascript:void(0)">价格保护</a></li>
+        <li><a href="javascript:void(0)">意见建议</a></li>
+        <li><a href="javascript:void(0)">我的问答</a></li>
+        <li><a href="javascript:void(0)">购买咨询</a></li>
+        <li><a href="javascript:void(0)">交易纠纷</a></li>
+        <li><a href="javascript:void(0)">上门预约服务</a></li>
+        <li><a href="javascript:void(0)">我的发票</a></li>
+        <li><a href="javascript:void(0)">举报中心</a></li>
+      </ul>
+      <li>设置</li>
+      <ul>
+        <li><a href="javascript:void(0)">个人信息</a></li>
+        <li><a href="javascript:void(0)">收货地址</a></li>
+      </ul>
+    </ul>
+  </aside>
+  <aside id="right">
+    <span id="right_one_span">我的订单</span>
+    <br>
+    <div id="right_one_div">
+      <table id="right_one_table">
+        <tr>
+          <td><a href="javascript:void(0)">全部订单</a></td>
+          <td><a href="javascript:void(0)">待付款</a></td>
+          <td><a href="javascript:void(0)">待收货</a></td>
+          <td><a href="javascript:void(0)">待评价</a></td>
+          <td colspan="2"><a href="javascript:void(0)">我的常购商品</a></td>
+          <td colspan="2"><a href="javascript:void(0)">好货·清仓</a></td>
+          <td colspan="2"><a href="javascript:void(0)">订单回收站</a></td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    <div id="right_tow_div">
+    <ul id="right_tow_div_first_ul">
+      <li>近三个月订单</li>
+      <ul id="right_tow_div_second_ul">
+        <li class="down">近三个月订单</li>
+        <li class="down">今年内订单</li>
+        <li class="down">2016年订单</li>
+        <li class="down">2015年订单</li>
+        <li class="down">2014年订单</li>
+        <li class="down">2014年以前订单</li>
+      </ul>
+      </ul>
+    <table id="right_tow_div_first_table">
+      <tr>
+        <td>订单详情</td>
+        <td>收货人</td>
+        <td>金额</td>
+        <td>操作</td>
+      </tr>
+    </table>
+    <ul id="right_tow_div_three_ul">
+      <li>全部状态</li>
+      <ul id="right_tow_div_four_ul">
+        <li class="down">全部状态</li>
+        <li class="down">等待付款</li>
+        <li class="down">等待收货</li>
+        <li class="down">已完成</li>
+        <li class="down">已取消</li>
+      </ul>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="right_three_div">
+    <p style="font-size: 12px">&nbsp;&nbsp;&nbsp;&nbsp;2017-03-29 21:35:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号： 51523454186&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</p>
+    <div id="shopimgs">
+    <img src="图片/购物图标img1.jpg">
+    <a href="javascript:void(0)"><p>江西移动手机话费充值20元 快充</p></a>
+    <p style="color: #aaa;">充值号码：136****2994</p>
+    </div>
+    <div id="shopagain">
+      <a href="javascript:void(0)">再次购买</a>
+    </div>
+    <div id="shopnumber">x1</div>
+    </div>
+
+    <div class="three2">
+    <table id="firsttable">
+    <p id="caption">猜你喜欢</p>
+    <span class="leftkey"><a href="javascript:void(0)">&lt;</a></span>
+    <tr>
+      <td><div class="img"><a href="购买界面.html" title="可链接"><img src="图片\indeximg1.jpg"></a>精通Python网络爬虫：核心技术、框架与项目实战<br><span class="imgfont"><em>¥</em>25.00</span></div></td>
+
+      <td><div class="img"><a href="等待建设中.html"><img src="图片\indeximg2.jpg"></a>人工智能的未来：揭示人类思维的奥秘<br><span class="imgfont"><em>¥</em>51.99</span></div></td>
+      <td><div class="img"><a href="等待建设中.html"><img src="图片\indeximg3.jpg"></a>深入理解Java虚拟机：JVM高级特性与最佳实践（第2版）<br><span class="imgfont"><em>¥</em>29.99</span></div></td>
+    </tr>
+    <span class="rightkey"><a href="javascript:void(0)">&gt;</a></span>
+  </table>
+  </div>
+
+  </aside>
+</article>
+<footer id="lastfooter">
+<br>
+<br>
+<table id="last">
+  <tr>
+    <th>了解我们</th>
+    <th>合作信息</th>
+    <th>支付方式</th>
+    <th>帮助中心和购物指南</th>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)">人才招聘</a></td>
+    <td><a href="javascript:void(0)">全球开店</a></td>
+    <td><a href="javascript:void(0)">货到付款</a></td>
+    <td><a href="javascript:void(0)">订单查询</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">关于我们</a></td>
+    <td><a href="javascript:void(0)">我要开店</a></td>
+    <td><a href="javascript:void(0)">支付宝与财付通</a></td>
+    <td><a href="javascript:void(0)">在线自助退换货</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">新闻中心</a></td>
+  <td><a href="javascript:void(0)">我要推广</a></td>
+      <td><a href="javascript:void(0)">网上银行</a></td>
+     <td><a href="javascript:void(0)">退换货政策</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">公益社区</a></td>
+  <td><a href="javascript:void(0)">合作伙伴</a></td>
+  <td><a href="javascript:void(0)">狂购支付</a></td>
+    <td><a href="javascript:void(0)">帮助中心</a></td>
+  </tr>
+</table>
+<br>
+<br>
+<div id="lastul">
+  <ul class="lastulone">
+    <li><a href="javascript:void(0)">使用条件</a></li>
+    <li><a href="javascript:void(0)">隐私声明</a></li>
+    <li><a href="javascript:void(0)">基于兴趣的广告</a></li>
+    <li><span style="color: gray">版权所有 © 1996-2017，狂购公司或其关联公司</span></li>
+  </ul>
+  <ul class="lastultwo">
+    <li><a href="javascript:void(0)"><img  src="图片\indeximg22.jpg"/>京公网安备 11010502030232号 </a></li>
+    <li><a href="javascript:void(0)">增值电信业务经营许可证：合字B2-20090004
+</a></li>
+  </ul>
+  <ul class="lastulthree">
+    <li><a href="javascript:void(0)">互联网药品信息服务资格证书 京-非经营性-2017-0034</a></li>
+    <li><a href="javascript:void(0)">出版物经营许可证新出发京批字第外080002号</a></li>
+    <li><a href="javascript:void(0)">食品经营许可证：JY11105150653271</a></li>
+  </ul>
+  <ul class="lastulfour">
+    <li><span style="color: gray">网络文化经营许可证京网文[2015]0615-245 | 营业执照：</span></li>
+    <li><a href="javascript:void(0)">91110000717883277U</a></li>
+  </ul>
+</div>
+</footer>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html> 

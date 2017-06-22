@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>login</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8"/ >
+  <style type="text/css">
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="scc文件/登录界面.css">
+  <script type="text/javascript " src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      
+      $("#three").mouseover(function(event) {
+        $(this).css({
+          background: '#E77600'
+        });
+      }).mouseout(function(event) {
+        $(this).css({
+          background: '#C05400'
+        });
+      });
+      $(".button1").mouseover(function(event) {
+        $(this).css({
+          background: '#767676'
+        });
+      }).mouseout(function(event) {
+        $(this).css({
+          background: '#DDD'
+        });
+      });
+      // if(x==0) {
+      //   $(".span").hide();
+      // }
+       $(".span").hide();
+      // $(".span").addClass('1');
+      $("#three").click(function(event) {
+        var s1=$("#input1").val();
+        var s2=$("#input2").val();
+         $(".span").show();
+
+        // $(function () {
+        //   window.location.href = "index.html";
+        // })
+        // location.href = "www.baidu.com";
+        // window.open('http://www.baidu.com');
+         // window.location.href = "http://baibu.com/";
+        // document.write(s1.length+s2.length);
+        if(s1.length!=0&&s2.length!=0) {
+          // window.location.href = "index.html";
+          $(function () {
+            window.location.href = "转跳.html";
+            // window.location.href = "index.html";
+          })
+        } 
+        // else if(s1.length!=0&&s2.length==0){
+        //   alert("请输入您的密码")
+        //   // $(".span").show("fast"); 
+        // }
+        // else if(s1.length==0&&s2.length!=0){
+        //   alert("请输入您的账号")
+        //   // $(".span").show("fast"); 
+        // }
+        else {
+          alert("请正确输入您的账号和密码（密码和账号都不为空即可）")
+        }
+      });
+      // $("#three").click(function(event) {
+      //   $(".span").show("fast"); 
+      // });
+    });
+  </script>
+</head>
+<body>
+<div class="img1">
+<a href="" title="等待建设中....."><img  src="图片/logo.jpg">
+狂购书店</a>
+</div>
+<br>
+<br>
+<div class="first">
+<label class="one">登陆</label>
+<br>
+<label class="two">邮箱地址或手机号码</label>
+  <input type="text" maxlength="20" class="length" id="input1"></input>
+  <!-- <span class="span spanone">输入您的邮箱地址或手机号码</span> -->
+  <br>
+  <div id="second">
+ <label class="two">密码</label>
+ <label class="three"><a href="" title="等待建设中.....">忘记密码</a></label>
+</div>
+  <input type="password" maxlength="20" class="length" id="input2"></input> 
+  <!-- <span class="span spanone">请输入您的密码</span> -->
+<br>
+<a href="" >
+<div id="three">
+登陆
+</div></a>
+
+<div id="four">
+<input type="checkbox" value="记住登录状态。">记住登录状态。
+<a href="" title="等待建设中.....">详情</a>
+</div>
+<div id="five">
+<hr class="hr1">更多登录方式<hr class="hr2">
+</div>
+<a href="" title="等待建设中.....">
+<div id="six">
+<img src="图片/登陆界面1.jpg">微信账号登陆
+</div></a>
+<div id="seven">
+<hr class="hr1">狂购的新客户?<hr class="hr2">
+</div>
+<div id="aight">
+<a href="注册表.html">
+<div class="button1">
+创建您的狂购账户
+</div></a>
+  <span  class="span1">登录即表示您同意网站的<a href="" title="等待建设中.....">使用条件</a>及<a href="" title="等待建设中.....">隐私声明</a></span>
+</div>
+</div>
+<footer>
+  <table id="footertableone">
+    <tr>
+      <td><a href="" title="等待建设中.....">使用条件</a></td>
+      <td><a href="" title="等待建设中.....">隐私声明</a></td>
+      <td><a href="" title="等待建设中.....">帮助</a></td>
+    </tr>
+  </table>
+  <span id="footerspanone">版权所有 © 1996-2017，狂购公司或其关联公司</span>
+</footer>
+<footer class="last">
+  xiongmin制作 &copy;
+</footer>
+</body>
+</html>

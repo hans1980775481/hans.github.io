@@ -1,0 +1,48 @@
+ table{
+      border:10px #96c inset;
+   /*   border-collapse: collapse;*/
+      border-spacing: 2px ;
+      
+      width: 80%;
+      margin:auto;
+      text-align: center ;
+      height: 450px;
+    }
+    caption{
+      color:#f0f;
+      text-shadow: 1.5px 1.5px 1.5px black;
+      font-size:36px;
+      font-family: 楷体;
+      margin: 5px
+    }
+    th{
+      background:#569;
+    }
+    td{
+      border:4px #69c groove;
+      background:#c56;
+    }
+    hr{
+      color:blue;
+      size: 2px;
+    }
+    span{
+      color: #ff9224;
+      font-size: Segoe UI Symbol;
+    }
+    button{
+    margin-left:47%;
+    margin-top: 50px;
+  }
+  .last{
+    background: #469;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
+  body{
+    background: url(../图片/nihao3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

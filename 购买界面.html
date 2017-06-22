@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>购买界面</title>
+  <link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <style type="text/css">
+  
+</style>
+<link rel="stylesheet" type="text/css" href="scc文件/购买界面.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script language =javascript > 
+var len=0;
+var arr=new Array();
+  arr[0]="图片/购买界面img1.jpg";
+  arr[1]="图片/购买界面img2.jpg";
+  arr[2]="图片/购买界面img3.jpg";
+  arr[3]="图片/购买界面img4.jpg";
+  arr[4]="图片/购买界面img5.jpg";
+  arr[5]="图片/购买界面img6.jpg";
+  arr[6]="图片/购买界面img7.jpg";
+  arr[7]="图片/购买界面img8.jpg";
+  arr[8]="图片/购买界面img9.jpg";
+  arr[9]="图片/购买界面img10.jpg";
+  setInterval(change, 1000);
+var len2=arr.length/2;
+  function change(){
+    var obj1=document.getElementById("obj1");
+    var obj2=document.getElementById("obj2");
+    if(len==arr.length/2-1) {
+      len=0;
+    }
+    else {
+      len++;
+    }
+    obj1.src=arr[len];
+    if(len2==arr.length-1) {
+      len2=arr.length/2;
+    }
+    else {
+      len2++;
+    }
+    obj2.src=arr[len2];
+  }
+</script>
+  <script type="text/javascript"  >
+  // var k=1;
+  // var s1="收起全部↑",s0="查看全部↓";
+    $(document).ready(function() {
+      $("#display1").click(function() {
+        $(".centerone1").css({
+          height: '1280px'
+        });
+        $("#display1").toggle();
+      });
+      $("#display2").click(function() {
+        $(".centerone1").css({
+          height: '335px'
+        });
+        $("#display1").toggle();
+      });
+      $("#display3").click(function() {
+        $(".centerone2").css({
+          height: '480px'
+        });
+        $("#display3").toggle();
+      });
+      $("#display4").click(function() {
+        $(".centerone2").css({
+          height: '335px'
+        });
+        $("#display3").toggle();
+      });
+      $("#display5").click(function() {
+        $("#explain").css({
+          display: 'block'
+        });
+        $(".center").addClass('addcenter1');
+        $("#display5").toggle();
+      });
+      $("#display6").click(function() {
+        $("#explain").css({
+          display: 'none'
+        });
+        $(".center").removeClass('addcenter1');
+        $("#display5").toggle();
+      });
+      $("#display9").click(function() {
+        $(".centerone3").css({
+          overflow: 'visible'
+        });
+        $("#display9").toggle();
+      });
+      $("#display10").click(function() {
+        $(".centerone3").css({
+          overflow: 'hidden'
+        });
+        $("#display9").toggle();
+      });
+    });
+    // function changetxt(k){
+    //   if(k==0) {
+    //     document.getElementById("display1").innerHTML=s0;
+    //   }
+    //   else {
+    //     document.getElementById("display1").innerHTML=s1;
+    //   }
+    // }
+  </script>
+</head>
+<body>
+<header id="headerone">
+  <a href="index.html"><img class="img1" src="图片/logo.jpg"></a>
+<div class="logo">
+  <a href="index.html" class="fore1">我的狂购</a>
+  <a href="index.html" class="fore2">返回狂购首页</a>
+</div>
+<div id="one1">
+  <input type="text" class="input1">
+  <a href="javascript:void(0)"><div class="topseek">搜索</div></a>
+  <!-- <a href=""><span class="span1">1元封顶&nbsp;</span></a> -->
+  <a href="javascript:void(0)"><span class="span1">欢乐颂2&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">择天记&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">腾讯传&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">大秦帝国&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">创业&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">追问&nbsp;</span></a>
+  <a href="javascript:void(0)"><span class="span1">漂洋过海</span></a>
+</div>
+<div id="one2">
+<a href="我的订单.html" target="_blank">
+<img src="图片/购物车图片.jpg" class="img2">
+数字商品购物车</a>
+</div>
+</header>
+<div id="tow">
+  <div id="tow1">
+    <a href="javascript:void(0)">&nbsp;图书&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;高级搜索&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;所有分类&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;新品排行&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;销售排行榜&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;新书店&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;教材教辅&nbsp;</a>    <a href="javascript:void(0)">少儿</a>
+    <a href="javascript:void(0)">&nbsp;文学&nbsp;</a><a href="javascript:void(0)">&nbsp;小说&nbsp;</a><a href="javascript:void(0)">&nbsp;历史&nbsp;</a><a href="javascript:void(0)">&nbsp;经管&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;励志&nbsp;</a><a href="javascript:void(0)">&nbsp;人文&nbsp;</a><a href="javascript:void(0)">&nbsp;社科&nbsp;</a><a href="javascript:void(0)">&nbsp;生活&nbsp;</a>
+    <a href="javascript:void(0)">&nbsp;科普&nbsp;</a><a href="javascript:void(0)">&nbsp;进口图书&nbsp;</a><a href="javascript:void(0)">&nbsp;促销&nbsp;</a>
+  </div>
+  <div id="tow2">
+    <img class="indeximg1" src="图片/indeximg1.jpg">
+    <br>
+    <a href="javascript:void(0)"><div class="img3"><img src="图片/关注图标.jpg" ></div><span class="span2">关注</span></a>
+    <a href="javascript:void(0)"><div class="img3"><img src="图片/分享图标.jpg" ></div><span class="span2">分享</span></a>
+  </div>
+  <div id="tow3">
+    <div class="tow3one">精通Python网络爬虫：核心技术、框架与项目实战</div>
+    <span style="font-size: 12px;" class="authors"><a href="javascript:void(0)">韦玮   </a>著</span><br>
+    <div class="tow3tow">狂购价：<span style="color: red;" >￥<span style="font-size: 25px;">25.00</span></span>
+    <span class="tow3tow_span1">累计评价 <a href="javascript:void(0)">10+</a></span>
+    </div>
+    <div id="tow4">
+      <table class="tow4_table1">
+        <tr>
+          <td>出 版 社</td>
+          <td colspan="4"><a href="javascript:void(0)">机械工业出版社</a></td>
+        </tr>
+        <tr>
+          <td>出版时间</td>
+          <td colspan="2">2017-03-01</td>
+          <td colspan="2">I S B N&nbsp;&nbsp;&nbsp;&nbsp;9787111562085</td>
+        </tr>
+        <tr>
+          <td>正文语种</td>
+          <td colspan="2">中文</td>
+          <td colspan="2">字　数&nbsp;&nbsp;&nbsp;&nbsp;108324</td>
+        </tr>
+        <tr>
+          <td>版　　次</td>
+          <td colspan="4">1</td>          
+        </tr>
+        <tr>
+          <td>文件大小</td>
+          <td colspan="4">9.76M</td>
+        </tr>
+      </table>
+      <span style="color: #666">所属分类<a href="javascript:void(0)">&nbsp;&nbsp; 数字内容</a> > <a href="javascript:void(0)">计算机与互联网 </a>> <a href="javascript:void(0)">软件工程及软件方法学</a></span>
+      <hr/>
+    </div>
+    <a href="javascript:void(0)"><div class="tow3left">加入购物车</div></a> 
+    <a href="javascript:void(0)"><div class="tow3right">立即购买</div></a>
+    <div class="tow3bottom">
+    <table class="tow4_table2">
+      <tr>
+        <td>温馨提示</td>
+        <td  style="width: 200px">·不支持7天无理由退换</td>
+        <td style="width: 300px"><a href="javascript:void(0)">·本商品支持狂币兑换</a></td>
+      </tr>
+      <tr>
+        <td>版权声明</td>
+        <td colspan="2" style="width: 400px">·本内容由 <a href="javascript:void(0)">北京华章图文信息有限公司</a> 版权提供，版权所有，侵权必究！</td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>
+<div id="three">
+  <div class="three1">
+    <p>人气榜单</p>
+  </div>
+  <div class="three2">
+    <table id="firsttable">
+    <span class="leftkey"><a href="javascript:void(0)">&lt;</a></span>
+    <tr>
+      <td><div class="img"><a href="javascript:void(0)"><img src="图片\indeximg5.jpg"></a>三体（套装，含《三体》、《黑暗森林》、《死神永生》）（电子书）<br><span class="imgfont"><em>¥</em>18.00</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)"><img src="图片\indeximg2.jpg"></a>人工智能的未来：揭示人类思维的奥秘<br><span class="imgfont"><em>¥</em>51.99</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)"><img src="图片\indeximg3.jpg"></a>深入理解Java虚拟机：JVM高级特性与最佳实践（第2版）<br><span class="imgfont"><em>¥</em>29.99</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)"><img src="图片\indeximg4.jpg"></a>软件开发视频大讲堂：Java从入门到精通（第3版）（附光盘内容）（电子书）<br><span class="imgfont"><em>¥</em>5.99</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)"><img src="图片\indeximg16.jpg"></a>白鹿原(未删节版) <br><span class="imgfont"><em>¥</em>24.20</span></div></td>
+      
+    </tr>
+    <span class="rightkey"><a href="javascript:void(0)">&gt;</a></span>
+  </table>
+  </div>
+  <div id="changeimg">
+  <div class="leftimg">
+  <p style="margin-left: 10px;">重磅好书</p>
+    <a href="javascript:void(0)"><img id="obj1" src="图片/购买界面img1.jpg"></a>
+  </div>
+  
+  <div class="rightimg">
+  <p style="margin-left: 10px;">购买此商品的顾客也同时购买</p>
+    <a href="javascript:void(0)"><img id="obj2" src="图片/购买界面img6.jpg"></a>
+  </div>
+  <div class="center">
+  <p style="color: red">目录</p>
+  <hr style="color: yellow">
+    版权信息<br>
+前言<br>
+第一篇 理论基础篇<br>
+第1章 什么是网络爬虫<br>
+1.1 初识网络爬虫<br>
+1.2 为什么要学网络爬虫<br>
+1.3 网络爬虫的组成<br>
+1.4 网络爬虫的类型<br>
+1.5 爬虫扩展——聚焦爬虫<br>
+1.6 小结<br>
+第2章 网络爬虫技能总览<br>
+2.1 网络爬虫技能总览图<br>
+2.2 搜索引擎核心<br>
+2.3 用户爬虫的那些事儿<br>
+2.4 小结<br>
+第二篇 核心技术篇<br>
+第3章 网络爬虫实现原理与实现技术<br>
+3.1 网络爬虫实现原理详解<br>
+3.2 爬行策略<br>
+3.3 网页更新策略<br>
+3.4 网页分析算法<br>
+3.5 身份识别<br>
+<a href="javascript:void(0)"><div id="display5">查看全部↓</div></a>
+3.6 网络爬虫实现技术<br>
+  </div>
+  </div>
+
+</div>
+<div id="explain">
+<div class="best">
+3.7 实例——metaseeker<br>
+3.8 小结<br>
+第4章 Urllib库与URLError异常处理<br>
+4.1 什么是Urllib库<br>
+4.2 快速使用Urllib爬取网页<br>
+4.3 浏览器的模拟——Headers属性<br>
+4.4 超时设置<br>
+4.5 HTTP协议请求实战<br>
+4.6 代理服务器的设置<br>
+4.7 DebugLog实战<br>
+4.8 异常处理神器——URLError实战<br>
+4.9 小结<br>
+第5章 正则表达式与Cookie的使用<br>
+5.1 什么是正则表达式<br>
+5.2 正则表达式基础知识<br>
+5.3 正则表达式常见函数<br>
+5.4 常见实例解析<br>
+5.5 什么是Cookie<br>
+5.6 Cookiejar实战精析<br>
+5.7 小结<br>
+第6章 手写Python爬虫<br>
+6.1 图片爬虫实战<br>
+6.2 链接爬虫实战<br>
+6.3 糗事百科爬虫实战<br>
+6.4 微信爬虫实战<br>
+6.5 什么是多线程爬虫<br>
+6.6 多线程爬虫实战<br>
+6.7 小结<br>
+第7章 学会使用Fiddler<br>
+7.1 什么是Fiddler<br>
+7.2 爬虫与Fiddler的关系<br>
+7.3 Fiddler的基本原理与基本界面<br>
+7.4 Fiddler捕获会话功能<br></div><div class="best">
+7.5 使用QuickExec命令行<br>
+7.6 Fiddler断点功能<br>
+7.7 Fiddler会话查找功能<br>
+7.8 Fiddler的其他功能<br>
+7.9 小结<br>
+第8章 爬虫的浏览器伪装技术<br>
+8.1 什么是浏览器伪装技术<br>
+8.2 浏览器伪装技术准备工作<br>
+8.3 爬虫的浏览器伪装技术实战<br>
+8.4 小结<br>
+第9章 爬虫的定向爬取技术<br>
+9.1 什么是爬虫的定向爬取技术<br>
+9.2 定向爬取的相关步骤与策略<br>
+9.3 定向爬取实战<br>
+9.4 小结<br>
+第三篇 框架实现篇<br>
+第10章 了解Python爬虫框架<br>
+10.1 什么是Python爬虫框架<br>
+10.2 常见的Python爬虫框架<br>
+10.3 认识Scrapy框架<br>
+10.4 认识Crawley框架<br>
+10.5 认识Portia框架<br>
+10.6 认识newspaper框架<br>
+10.7 认识Python-goose框架<br>
+10.8 小结<br>
+第11章 爬虫利器——Scrapy安装与配置<br>
+11.1 在Windows7下安装及配置Scrapy实战详解<br>
+11.2 在Linux（Centos）下安装及配置Scrapy实战详解<br>
+11.3 在MAC下安装及配置Scrapy实战详解<br>
+11.4 小结<br>
+第12章 开启Scrapy爬虫项目之旅<br>
+12.1 认识Scrapy项目的目录结构<br></div><div class="best">
+12.2 用Scrapy进行爬虫项目管理<br>
+12.3 常用工具命令<br>
+12.4 实战：Items的编写<br>
+12.5 实战：Spider的编写<br>
+12.6 XPath基础<br>
+12.7 Spider类参数传递<br>
+12.8 用XMLFeedSpider来分析XML源<br>
+12.9 学会使用CSVFeedSpider<br>
+12.10 Scrapy爬虫多开技能<br>
+12.11 避免被禁止<br>
+12.12 小结<br>
+第13章 Scrapy核心架构<br>
+13.1 初识Scrapy架构<br>
+13.2 常用的Scrapy组件详解<br>
+13.3 Scrapy工作流<br>
+13.4 小结<br>
+第14章 Scrapy中文输出与存储<br>
+14.1 Scrapy的中文输出<br>
+14.2 Scrapy的中文存储<br>
+14.3 输出中文到JSON文件<br>
+14.4 小结<br>
+第15章 编写自动爬取网页的爬虫<br>
+15.1 实战：items的编写<br>
+15.2 实战：pipelines的编写<br>
+15.3 实战：settings的编写<br>
+15.4 自动爬虫编写实战<br>
+15.5 调试与运行<br>
+15.6 小结<br>
+第16章 CrawlSpider<br>
+16.1 初识CrawlSpider<br>
+16.2 链接提取器<br>
+16.3 实战：CrawlSpider实例<br>
+16.4 小结<br></div><div class="best">
+第17章 Scrapy高级应用<br>
+17.1 如何在Python3中操作数据库<br>
+17.2 爬取内容写进MySQL<br>
+17.3 小结<br>
+第四篇 项目实战篇<br>
+第18章 博客类爬虫项目<br>
+18.1 博客类爬虫项目功能分析<br>
+18.2 博客类爬虫项目实现思路<br>
+18.3 博客类爬虫项目编写实战<br>
+18.4 调试与运行<br>
+18.5 小结<br>
+第19章 图片类爬虫项目<br>
+19.1 图片类爬虫项目功能分析<br>
+19.2 图片类爬虫项目实现思路<br>
+19.3 图片类爬虫项目编写实战<br>
+19.4 调试与运行<br>
+19.5 小结<br>
+第20章 模拟登录爬虫项目<br>
+20.1 模拟登录爬虫项目功能分析<br>
+20.2 模拟登录爬虫项目实现思路<br>
+20.3 模拟登录爬虫项目编写实战<br>
+20.4 调试与运行<br>
+20.5 小结<br></div>
+<a href="javascript:void(0)"><div id="display6" ><p>收起全部↑</p></div></a>
+</div>
+<div id="four">
+<div id="four1">
+  <p>近一周畅销榜</p>
+  <div id="shopimg">
+  <a href="javascript:void(0)"><img src="图片/购买界面img11.jpg"></a>
+  <a href="javascript:void(0)">细节：如何轻松影响他人<br></a>
+  <span style="color: red;font-weight: bold;">￥6.99</span>
+  </div>
+  <div id="shopimg">
+  <a href="javascript:void(0)"><img src="图片/购买界面img12.jpg"></a>
+  <a href="javascript:void(0)">猎人之子<br></a>
+  <span style="color: red;font-weight: bold;">￥0.08</span>
+  </div>
+  <div id="shopimg">
+  <a href="javascript:void(0)"><img src="图片/购买界面img13.jpg"></a>
+  <a href="javascript:void(0)">高而基考研心理学（统考版）：普通心理学分册<br></a>
+  <span style="color: red;font-weight: bold;">￥0.10</span>
+  </div>
+  <div id="shopimg">
+  <a href="javascript:void(0)"><img src="图片/购买界面img14.jpg"></a>
+  <a href="javascript:void(0)">自控力<br></a>
+  <span style="color: red;font-weight: bold;" >￥14.00</span>
+  </div>
+</div>
+<div id="centertwo">
+  <p>前言</p>
+  <div class="centerone1">为什么写这本书<br>　　网络爬虫其实很早就出现了，最开始网络爬虫主要应用在各种搜索引擎中。在搜索引擎中，主要使用通用网络爬虫对网页进行爬取及存储。<br>　　随着大数据时代的到来，我们经常需要在海量数据的互联网环境中搜集一些特定的数据并对其进行分析，我们可以使用网络爬虫对这些特定的数据进行爬取，并对一些无关的数据进行过滤，将目标数据筛选出来。对特定的数据进行爬取的爬虫，我们将其称为聚焦网络爬虫。在大数据时代，聚焦网络爬虫的应用需求越来越大。<br>　　目前在国内Python网络爬虫的书籍基本上都是从国外引进翻译的，国内的本版书籍屈指可数，故而我跟华章的副总编杨福川策划了这本书。本书的撰写过程中各方面的参考资料非常少，因此完成本书所花费的精力相对来说是非常大的。<br>　　本书从系统化的视角，为那些想学习Python网络爬虫或者正在研究Python网络爬虫的朋友们提供了一个全面的参考，让读者可以系统地学习Python网络爬虫的方方面面，在理解并掌握了本书的实例之后，能够独立编写出自己的Python网络爬虫项目，并且能够胜任Python网络爬虫工程师相关岗位的工作。<br>　　同时，本书的另一个目的是，希望可以给大数据或者数据挖掘方向的从业者一定的参考，以帮助这些读者从海量的互联网信息中爬取需要的数据。所谓巧妇难为无米之炊，有了这些数据之后，从事大数据或者数据挖<a href="javascript:void(0)"><div id="display1">查看全部↓</div></a>掘方向工作的读者就可以进行后续的分析处理了。<br>　　本书的主要内容和特色<br>　　本书是一本系统介绍Python网络爬虫的书籍，全书注重实战，涵盖网络爬虫原理、如何手写Python网络爬虫、如何使用Scrapy框架编写网络爬虫项目等关于Python网络爬虫的方方面面。<br>　　本书的主要特色如下：<br>　　总之，在理解本书内容并掌握书中实例之后，读者将能胜任Python网络爬虫工程师方向的工作并学会各种类型网络爬虫项目的编写。此外，本书对于大数据或数据挖掘方向的从业者也非常有帮助，比如可以利用Python网络爬虫轻松获取所需的数据信息等。<br>　　本书面向的读者<br>　　如何阅读本书<br>　　本书分为四篇，共计20章。<br>　　第一篇为理论基础篇（第1～2章），主要介绍了网络爬虫的基础知识，让大家从零开始对网络爬虫有一个比较清晰的认识。<br>　　第二篇为核心技术篇（第3～9章），详细介绍了网络爬虫实现的核心技术，包括网络爬虫的工作原理、如何用Urllib库编写网络爬虫、爬虫的异常处理、正则表达式、爬虫中Cookie的使用、手写糗事百科爬虫、手写链接爬虫、手写微信爬虫、手写多线程爬虫、浏览器伪装技术、Python网络爬虫的定向爬取技术及实例等。学完这一部分内容，读者就可以写出自己的爬虫了。这部分的爬虫编写采用的是一步步纯手写的方式进行的，没有采用框架。<br>　　第三篇为框架实现篇（第10～17章），主要详细介绍了如何用框架实现Python网络爬虫项目。使用框架实现Python网络爬虫项目相较于手写方式更加便捷，主要包括Python爬虫框架分类、Scrapy框架在各系统中的安装以及如何避免各种“坑”、如何用Scrapy框架编写爬虫项目、Scrapy框架架构详解、Scrapy的中文输出与存储、在Scrapy中如何使用for循环实现自动网页爬虫、如何通过CrawlSpider实现自动网页爬虫、如何将爬取的内容写进数据库等。其中第12章为基础部分，读者需要着重掌握。<br>　　第四篇为项目实战篇（第18～20章），分别讲述了博客类爬虫项目、图片类爬虫项目、模拟登录爬虫项目的编程及实现。其中，也会涉及验证码处理等方面的难点知识，帮助读者通过实际的项目掌握网络爬虫项目的编写。<br>　　勘误和支持<br>　　由于作者的水平有限，书中难免有一些错误或不准确的地方，恳请各位读者不吝指正。<br>　　相关建议各位可以通过微博@韦玮pig或通过QQ公众号a67899或微信公众平台weijc7789（可以直接扫描下方二维码添加）进行反馈，也可以直接向邮箱ceo@iqianyue.com发送邮件，期待能够收到各位读者的意见和建议，欢迎来信。<br>　　致谢<br>　　感谢机械工业出版社华章公司的副总编杨福川老师与编辑李艺老师，在近一年的时间里，是你们一次次在我遇到困难的时候，给予我鼓励，让我可以坚持写下去。创作一本图书是非常艰苦的，除了技术知识等因素之外，还需要非常大的毅力。特别感谢杨福川在写作过程中对我各方面的支持，尤其是对我毅力的培养。<br>　　感谢CSDN、51CTO与极客学院，因为你们，让我在这个领域获得了更多的学员与支持。<br>　　感谢恩师何云景教授对我创业方面的帮助，因为有您，我才拥有了一个更好的创业开端及工作环境。<br>　　特别致谢<br>　　最后，需要特别感谢的是我的女友，因为编写这本书，少了很多陪你的时间，感谢你的不离不弃与理解包容。希望未来可以加倍弥补你那些错过吃的美食和那些错过逛的街道。<br>　　同时，也要感谢你帮我完成书稿的校对工作，谢谢你的付出与支持。因为有了你默默的付出，我才能坚定地走下去；因为有了你不断的支持，我才可以安心地往前冲。<br>　　感谢爷爷从小对我人生观、价值观的培养，您是一个非常有思想的人。<br>　　感谢远方的父母、叔叔、姐姐，那些亲情的陪伴是我最珍贵的财富。<br>　　谨以此书献给热爱Python的朋友们！
+<a href="javascript:void(0)"><div id="display2">收起全部↑</div></a>
+</div>
+<p>精彩书摘</p>
+<div class="centerone2">
+  <div class="con" style="height: 440px; overflow: hidden;">　　随着大数据时代的来临，网络爬虫在互联网中的地位将越来越重要。互联网中的数据是海量的，如何自动高效地获取互联网中我们感兴趣的信息并为我们所用是一个重要的问题，而爬虫技术就是为了解决这些问题而生的。我们感兴趣的信息分为不同的类型：如果只是做搜索引擎，那么感兴趣的信息就是互联网中尽可能多的高质量网页；如果要获取某一垂直领域的数据或者有明确的检索需求，那么感兴趣的信息就是根据我们的检索和需求所定位的这些信息，此时，需要过滤掉一些无用信息。前者我们称为通用网络爬虫，后者我们称为聚焦网络爬虫。<br>　　1.1  初识网络爬虫<br>　　网络爬虫又称网络蜘蛛、网络蚂蚁、网络机器人等，可以自动化浏览网络中的信息，当然浏览信息的时候需要按照我们制定的规则进行，这些规则我们称之为网络爬虫算法。使用Python可以很方便地编写出爬虫程序，进行互联网信息的自动化检索。<br>　　搜索引擎离不开爬虫，比如百度搜索引擎的爬虫叫作百度蜘蛛（Baiduspider）。百度蜘蛛每天会在海量的互联网信息中进行爬取，爬取优质信息并收录，当用户在百度搜索引擎上检索对应关键词时，百度将对关键词进行分析处理，从收录的网页中找出相关网页，按照一定的排名规则进行排序并将结果展现给用户。在这个过程中，百度蜘蛛起到了至关重要的作用。那么，如何覆盖互联网中更多的优质网页？又如何筛选这些重复的页面？这些都是由百度蜘蛛爬虫的算法决定的。采用不同的算法，爬虫的运行效率会不同，爬取结果也会有所<a href="javascript:void(0)"><div id="display3">查看全部↓</div></a>差异。所以，我们在研究爬虫的时候，不仅要了解爬虫如何实现，还需要知道一些常见爬虫的算法，如果有必要，我们还需要自己去制定相应的算法，这些在后面都会为大家详细地讲解，在此，我们仅需要对爬虫的概念有一个基本的了解。<br>　　除了百度搜索引擎离不开爬虫以外，其他搜索引擎也离不开爬虫，它们也拥有自己的爬虫。比如360的爬虫叫360Spider，搜狗的爬虫叫Sogouspider，必应的爬虫叫Bingbot。<br>　　如果想自己实现一款小型的搜索引擎，我们也可以编写出自己的爬虫去实现，当然，虽然可能在性能或者算法上比不上主流的搜索引擎，但是个性化的程度会非常高，并且也有利于我们更深层次地理解搜索引擎内部的工作原理。<br>　　大数据时代也离不开爬虫，比如在进行大数据分析或数据挖掘时，我们可以去一些比较大型的官方站点下载数据源。但这些数据源比较有限，那么如何才能获取更多更高质量的数据源呢？此时，我们可以编写自己的爬虫程序，从互联网中进行数据信息的获取。所以在未来，爬虫的地位会越来越重要。<br>　　1.2  为什么要学网络爬虫<br>　　在上一节中，我们初步认识了网络爬虫，但是为什么要学习网络爬虫呢？要知道，只有清晰地知道我们的学习目的，才能够更好地学习这一项知识，所以在这一节中，我们将会为大家分析一下学习网络爬虫的原因。<br>　　当然，不同的人学习爬虫，可能目的有所不同，在此，我们总结了4种常见的学习爬虫的原因。<br>　　1）学习爬虫，可以私人订制一个搜索引擎，并且可以对搜索引擎的数据采集工作原理进行更深层次地理解。</div>
+  <a href="javascript:void(0)"><div id="display4">收起全部↑</div></a>
+</div>
+<div class="centerone3">
+  <p>精彩插图</p>
+  <a href="javascript:void(0)"><div id="display7" ><label id="display9">查看全部↓</label></div></a>
+  <img src="图片/精彩插图img1.png">
+  <img src="图片/精彩插图img2.png">
+  <img src="图片/精彩插图img3.png">
+  <img src="图片/精彩插图img4.png">
+  <a href="javascript:void(0)"><div id="display8" ><label id="display10">收起全部↑</label></div></a>
+</div>
+</div>
+<footer id="lastfooter">
+<br>
+<br>
+<table id="last">
+  <tr>
+    <th>了解我们</th>
+    <th>合作信息</th>
+    <th>支付方式</th>
+    <th>帮助中心和购物指南</th>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)">人才招聘</a></td>
+    <td><a href="javascript:void(0)">全球开店</a></td>
+    <td><a href="javascript:void(0)">货到付款</a></td>
+    <td><a href="javascript:void(0)">订单查询</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">关于我们</a></td>
+    <td><a href="javascript:void(0)">我要开店</a></td>
+    <td><a href="javascript:void(0)">支付宝与财付通</a></td>
+    <td><a href="javascript:void(0)">在线自助退换货</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">新闻中心</a></td>
+  <td><a href="javascript:void(0)">我要推广</a></td>
+      <td><a href="javascript:void(0)">网上银行</a></td>
+     <td><a href="javascript:void(0)">退换货政策</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)">公益社区</a></td>
+  <td><a href="javascript:void(0)">合作伙伴</a></td>
+  <td><a href="javascript:void(0)">狂购支付</a></td>
+    <td><a href="javascript:void(0)">帮助中心</a></td>
+  </tr>
+</table>
+<br>
+<br>
+<div id="lastul">
+  <ul class="lastulone">
+    <li><a href="javascript:void(0)">使用条件</a></li>
+    <li><a href="javascript:void(0)">隐私声明</a></li>
+    <li><a href="javascript:void(0)">基于兴趣的广告</a></li>
+    <li><span style="color: gray">版权所有 © 1996-2017，狂购公司或其关联公司</span></li>
+  </ul>
+  <ul class="lastultwo">
+    <li><a href="javascript:void(0)"><img  src="图片\indeximg22.jpg"/>京公网安备 11010502030232号 </a></li>
+    <li><a href="javascript:void(0)">增值电信业务经营许可证：合字B2-20090004
+</a></li>
+  </ul>
+  <ul class="lastulthree">
+    <li><a href="javascript:void(0)">互联网药品信息服务资格证书 京-非经营性-2017-0034</a></li>
+    <li><a href="javascript:void(0)">出版物经营许可证新出发京批字第外080002号</a></li>
+    <li><a href="javascript:void(0)">食品经营许可证：JY11105150653271</a></li>
+  </ul>
+  <ul class="lastulfour">
+    <li><span style="color: gray">网络文化经营许可证京网文[2015]0615-245 | 营业执照：</span></li>
+    <li><a href="javascript:void(0)">91110000717883277U</a></li>
+  </ul>
+</div>
+</footer>
+</div>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html>

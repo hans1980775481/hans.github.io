@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>狂购书店</title>
+<link rel="Shortcut Icon" href="图片/logo.jpg" type="image/x-icon">
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="scc文件/index.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var s='';
+      $(".imgi").each(function(i) {
+        s+='<a class="tow" href="">'+(i+1)+'</a>'
+      });
+      $("#but").html(s);
+      $(".tow:first").addClass('curr');
+      $(".tow").mouseover(function(event) {
+        $(".tow").removeClass('curr');
+        $(this).addClass('curr');
+        $("#first1").css({"marginTop": -$(this).index()*280+"px"});
+      });
+
+      // $(".rightkey").click(function() {
+      //   $("#bottomtableone").css({"marginRight": 400+"px"});
+      // });
+      // $(".leftkey").click(function() {
+      //   $("#bottomtableone").css({"marginLeft": 400+"px"});
+      // });
+
+      $("#firsttable").css({"display":"block"});
+      $("#centerspan1").css({"background":"gray"});
+      $("#centerspan1").mouseover(function(){
+
+        $("#centerspan2").css({"background":"none"});
+        $("#secondtable").css({"display":"none"});
+        $("#centerspan3").css({"background":"none"});
+        $("#threetable").css({"display":"none"});
+
+        $("#firsttable").css({"display":"block"});
+        $(this).css({"background":"gray"});
+      })
+      $("#centerspan2").mouseover(function(){
+
+        $("#firsttable").css({"display":"none"});
+        $("#centerspan1").css({"background":"none"});
+        $("#centerspan3").css({"background":"none"});
+        $("#threetable").css({"display":"none"});
+
+        $("#secondtable").css({"display":"block"});
+        $(this).css({"background":"gray"});
+      })
+      $("#centerspan3").mouseover(function(){
+
+        $("#firsttable").css({"display":"none"});
+        $("#centerspan1").css({"background":"none"});
+        $("#centerspan2").css({"background":"none"});
+        $("#secondtable").css({"display":"none"});
+
+        $("#threetable").css({"display":"block"});
+        $(this).css({"background":"gray"});
+      })
+    });
+  </script>
+</style></head>
+
+<body background="图片\indeximg24.jpg">
+<!-- <h1>我的网页，你的世界</h1> -->
+<footer>
+<a href="index.html" ><span class="footer1">狂购书店</span></a>
+</footer>
+<footer class="footerone">
+<a href="javascript:void(0)" title="等待建设中.....">电子书</a>
+
+<a href="javascript:void(0)" title="等待建设中.....">社区</a>
+<a href="javascript:void(0)" title="等待建设中.....">图书勋章</a>
+<a href="javascript:void(0)" title="等待建设中.....">特价</a>
+<a href="我的订单.html" target="_blank" >我的订单</a>
+<a href="注册表.html" target="_blank" >注册</a>
+<a href="登陆界面.html" target="_blank">登陆</a>
+<a href="课程表.html" target="_blank">课程表</a>
+<a href="日历.html" target="_blank">时间</a>
+<a href="计算器.html" target="_blank">本人结算</a>
+</footer>
+<hr>
+<div class="box">
+<ul id="first1">
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img1.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi"  src="图片/img2.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img3.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img4.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img5.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img6.jpg"><a></li>
+  <li><a href="javascript:void(0)" title="等待建设中....."><img class="imgi" src="图片/img7.jpg"><a></li>
+</ul>
+<div id="but"></div>
+</div>
+<article id="articleone">
+  <div id="left">
+    <ul>
+      <li>工业科技</li>
+      <ul class="ulone">
+        <li><a href="javascript:void(0)" title="等待建设中.....">计算机与互联网</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">科学</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">医学</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">编程语言与程序设计</a></li>
+      </ul>
+      <li>社会科学</li>
+      <ul class="ulone">
+        <li><a href="javascript:void(0)" title="等待建设中.....">历史</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">宗教</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">哲学</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">国学</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">政治</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">军事</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">文化</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">心理学</a></li>
+      </ul>
+      <li>文学</li>
+      <ul class="ulone">
+        <li><a href="javascript:void(0)" title="等待建设中.....">小说</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">传记</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">男生原创</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">女生原创</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">艺术</a></li>
+        <li><a href="javascript:void(0)" title="等待建设中.....">言情小说</a></li>
+      </ul>
+    </ul>
+  </div>
+  <div id="right"></div>
+  <div id="center">
+  <p id="centertitle" ><span >新书推荐</span>
+  <a href="javascript:void(0)" ><span id="centerspan3">社会科学</span></a>
+  <a href="javascript:void(0)" ><span id="centerspan2">文学</span></a>
+  <a href="javascript:void(0)" ><span id="centerspan1">工业科技</span></a>
+  </p>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <table id="firsttable">
+    <tr>
+      <td><div class="img"><a href="购买界面.html" title="可链接"><img src="图片\indeximg1.jpg"></a>精通Python网络爬虫：核心技术、框架与项目实战<br><span class="imgfont"><em>¥</em>25.00</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg2.jpg"></a>人工智能的未来：揭示人类思维的奥秘<br><span class="imgfont"><em>¥</em>51.99</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg3.jpg"></a>深入理解Java虚拟机：JVM高级特性与最佳实践（第2版）<br><span class="imgfont"><em>¥</em>29.99</span></div></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg4.jpg"></a>软件开发视频大讲堂：Java从入门到精通（第3版）（附光盘内容）（电子书）<br><span class="imgfont"><em>¥</em>5.99</span></div></div></td>
+    </tr>
+  </table>
+  <table id="secondtable">
+    <tr>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg5.jpg"></a>三体（套装，含《三体》、《黑暗森林》、《死神永生》）（电子书）<br><span class="imgfont"><em>¥</em>18.00</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg6.jpg"></a>月球上的圣诞节<br><span class="imgfont"><em>¥</em>1.99</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg7.jpg"></a>追风筝的人（电子书）<br><span class="imgfont"><em>¥</em>7.99</span></div></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg8.jpg"></a>星际转移<br><span class="imgfont"><em>¥</em>2.99</span></div></div></td>
+    </tr>
+  </table>
+  <table id="threetable">
+    <tr>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg10.jpg"></a>未来简史·人类简史（套装2册）<br><span class="imgfont"><em>¥</em>81.00</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg11.jpg"></a>人类简史：从动物到上帝<br><span class="imgfont"><em>¥</em>40.80</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg12.jpg"></a>免疫<br><span class="imgfont"><em>¥</em>21.00</span></div></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg13.jpg"></a>本草纲目（全彩精华版）<br><span class="imgfont"><em>¥</em>5.99</span></div></div></td>
+    </tr>
+  </table>
+  <p id="bottomtitle">重磅好书</p>
+  </div>
+</article>
+<br>
+<hr class="hr">
+<br>
+<div id="bottomtableone">
+<table id="bottomtable1">
+<span class="leftkey"><a href="javascript:void(0)" title="等待建设中.....">&lt;</a></span>
+    <tr>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg14.jpg"></a>我们仨<br><span class="imgfont"><em>¥</em>14.50</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg15.jpg"></a>宝宝第一套好性格养成书:皮特猫(套装共6册)<br><span class="imgfont"><em>¥</em>62.80</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg16.jpg"></a>白鹿原(未删节版) <br><span class="imgfont"><em>¥</em>24.20</span></div></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg17.jpg"></a>时间简史<br><span class="imgfont"><em>¥</em>26.10</span></div></div></td>
+    </tr>
+<span class="rightkey"><a href="javascript:void(0)" title="等待建设中.....">&gt;</a></span>
+  </table>
+</div>
+<div id="bottomtabletow">
+<p class="bottomtitletow">特别关注</p>
+<hr class="hr">
+<br>
+<br>
+<table id="bottomtable2">
+<span class="leftkey"><a href="javascript:void(0)" title="等待建设中.....">&lt;</a></span>
+    <tr>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg18.jpg"></a>情景洞洞认知书:就是找不到系列(套装共3册) <br><span class="imgfont"><em>¥</em>107.10</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg19.jpg"></a>温暖人心的心灵成长绘本：爆炸头米拉(典藏版)(套装共6册)<br><span class="imgfont"><em>¥</em>57.80</span></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg20.jpg"></a>人工智能：李开复谈AI如何重塑个人、商业与社会的未来图谱 <br><span class="imgfont"><em>¥</em>39.60</span></div></div></td>
+      <td><div class="img"><a href="javascript:void(0)" title="等待建设中....."><img src="图片\indeximg21.jpg"></a>五个人的战争:好莱坞与第二次世界大战<br><span class="imgfont"><em>¥</em>65.69</span></div></div></td>
+    </tr>
+<span class="rightkey"><a href="javascript:void(0)" title="等待建设中.....">&gt;</a></span>
+  </table>
+</div>
+<br>
+<hr>
+<footer id="lastfooter">
+<br>
+<br>
+<table id="last">
+  <tr>
+    <th>了解我们</th>
+    <th>合作信息</th>
+    <th>支付方式</th>
+    <th>帮助中心和购物指南</th>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)" title="等待建设中.....">人才招聘</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">全球开店</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">货到付款</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">订单查询</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)" title="等待建设中.....">关于我们</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">我要开店</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">支付宝与财付通</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">在线自助退换货</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)" title="等待建设中.....">新闻中心</a></td>
+  <td><a href="javascript:void(0)" title="等待建设中.....">我要推广</a></td>
+      <td><a href="javascript:void(0)" title="等待建设中.....">网上银行</a></td>
+     <td><a href="javascript:void(0)" title="等待建设中.....">退换货政策</a></td>
+  </tr>
+  <tr>
+  <td><a href="javascript:void(0)" title="等待建设中.....">公益社区</a></td>
+  <td><a href="javascript:void(0)" title="等待建设中.....">合作伙伴</a></td>
+  <td><a href="javascript:void(0)" title="等待建设中.....">狂购支付</a></td>
+    <td><a href="javascript:void(0)" title="等待建设中.....">帮助中心</a></td>
+  </tr>
+</table>
+<br>
+<br>
+<div id="lastul">
+  <ul class="lastulone">
+    <li><a href="javascript:void(0)" title="等待建设中.....">使用条件</a></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">隐私声明</a></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">基于兴趣的广告</a></li>
+    <li><span style="color: gray">版权所有 © 1996-2017，狂购公司或其关联公司</span></li>
+  </ul>
+  <ul class="lastultwo">
+    <li><a href="javascript:void(0)" title="等待建设中....."><img  src="图片\indeximg22.jpg"/>京公网安备 11010502030232号 </a></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">增值电信业务经营许可证：合字B2-20090004
+</a></li>
+  </ul>
+  <ul class="lastulthree">
+    <li><a href="javascript:void(0)" title="等待建设中.....">互联网药品信息服务资格证书 京-非经营性-2017-0034</a></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">出版物经营许可证新出发京批字第外080002号</a></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">食品经营许可证：JY11105150653271</a></li>
+  </ul>
+  <ul class="lastulfour">
+    <li><span style="color: gray">网络文化经营许可证京网文[2015]0615-245 | 营业执照：</span></li>
+    <li><a href="javascript:void(0)" title="等待建设中.....">91110000717883277U</a></li>
+  </ul>
+</div>
+</footer>
+<footer class="last">
+  AsherTry制作 &copy;
+</footer>
+</body>
+</html>

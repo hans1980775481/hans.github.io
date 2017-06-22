@@ -1,0 +1,232 @@
+body a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .img1{
+    margin:0 auto;
+    display: block;
+    /*text-align:center;*/
+    width: 120px;
+    height: 80px;
+    /*margin-left: 80px;*/
+    margin-top: 20px;
+    font-family: 隶书;
+    text-align: center;
+  }
+  .img1 img{
+    margin:0 auto;
+    width: 120px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .first{
+    width: 30%;
+    height: 500px;
+    margin:0 auto;
+    border: 1px solid #666;
+    border-radius: 3px;
+  }
+  .one{
+    text-align: center;
+    font-family: 隶书;
+    font-size: 36px;
+    display: block;
+  }
+  .two{
+    margin-left: 10%;
+    font-size: 15px;
+    display: inline-block;
+    font-weight:bold;
+  }
+  .length{
+    height: 20px;
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  #second .three{
+    display: inline-block;
+    float: right;
+    margin-right: 10%;
+  }
+  #second .three a:hover{
+    color: #FFDC99;
+  }
+  #second .three a{
+    color: #0066c0;
+  }
+  #three{
+    height: 30px;
+    line-height: 30px;
+    background:#C05400;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /*box-shadow: 1px 1px 5px black;*/
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+    border-radius: 3px;
+  }
+  #four{
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #four a{
+    display: block;
+    float: right;
+    color: #0066c0;
+  }
+  #four a:hover{
+    color: #FFDC99;
+  }
+  #five{
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    /*border: 1px green solid;*/
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #five .hr1{
+    width: 35%;
+    margin-top:15px; 
+    float: left;
+  }
+  #five .hr2{
+    width: 35%;
+    margin-top:15px; 
+    float: right;
+  }
+  #six{
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    /*border: 1px green solid;*/
+    background: -webkit-linear-gradient(top,#13d71f,#63d71f);
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+    border-radius: 3px;
+    color: white;
+    font-family: 楷体;
+    margin-bottom: 10px;
+  }
+  #six img{
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 38%;
+    margin-right: 0px;
+  }
+  #six a{
+    color: white;
+  }
+  #seven{
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    /*border: 1px green solid;*/
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #seven .hr1{
+    width: 35%;
+    margin-top:15px; 
+    float: left;
+  }
+  #seven .hr2{
+    width: 35%;
+    margin-top:15px; 
+    float: right;
+  }
+  #aight{
+    height: 20%;
+    display: block;
+    width: 80%;
+    margin: auto;
+    /*border: 1px green solid;*/
+  }
+  #aight .button1{
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+    font-family: 楷体;
+    line-height: 30px;
+    text-align: center;
+    background: #DDD;
+    border-radius: 3px;
+    /*border: 0px 0px solid;*/
+  }
+  #aight .span1{
+    display: block;;
+    color: #666;
+    width: 100%;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 8%;
+    margin-bottom: 0px;
+    /*font-family: 楷体;*/
+    /*background: #A2A6AC;*/
+  }
+/*  .aightbutton{
+    background: #767676;
+  }*/
+  footer{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    background: #EEE;
+    /*border: 1px solid green;*/
+    border-top: 2px outset #DDD;
+  }
+  footer #footertableone{
+    display: block;
+    margin: 30px;
+    float: left;
+    margin-left:40%; 
+    text-align: center;
+  }
+  footer #footertableone td{
+    width: 100px;
+  }
+  #footerspanone{
+    display: block;
+    clear: both;
+    text-align: center;
+  }
+  footer a,#aight .span1 a{
+    color: #0066c0;
+  }
+  footer a:hover,#aight .span1 a:hover{
+    color: #FFDC99;
+  }
+ /* .span{
+    color: red;
+    display: block;
+    float: left;
+    margin-left: 10%;
+    font-size: 12px;
+  }*/
+  .last{
+    background: #469;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
